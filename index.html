@@ -414,12 +414,20 @@
           <p class="footer-form-desc">Subscribe</p>
           <label class="footer-form-field">
             <span class="header-none footer-form-input-desc">Email</span>
-            <input
-              class="footer-form-input"
-              type="text"
-              name="user_email"
-              placeholder="E-mail"
-            />
+            <span class="footer-form-input-wrapper">
+              <input
+                class="footer-form-input"
+                type="text"
+                name="user_email"
+                placeholder="E-mail"
+              />
+              <button class="footer-form-submit" type="submit">
+                <span class="footer-form-submit-text">Subscribe</span>
+                <svg class="footer-form-submit-icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </span>
           </label>
         </form>
       </div>

@@ -27,6 +27,7 @@
   --icon-color: #f4f4fd;
   --other-icon-color: #000000;
   --footer-text-color: #ffffff;
+  --footer-icon-color: #ffffff;
   --footer-social-list-link-color: rgba(255, 255, 255, 0.1);
   --footer-accent-social-list-link-color: #31d0aa;
   --modal-window-background-color: #fcfcfc;
@@ -614,6 +615,7 @@ body {
   border-radius: 4px;
   background: transparent;
   padding: 8px 16px;
+  margin-right: 24px;
   /* описуємо текст */
   font-size: 12px;
   line-height: 2;
@@ -627,6 +629,43 @@ body {
 
 .footer-form-input::placeholder {
   color: var(--placeholder-footer-text-color);
+}
+
+.footer-form-input-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.footer-form-submit {
+  display: block;
+  padding: 8px 64px 8px 24px;
+  background: var(--button-color);
+  border-radius: 4px;
+  border: var(--button-color);
+  transition: background var(--transition-duration-and-func),
+    border-color var(--transition-duration-and-func);
+}
+
+.footer-form-submit-text {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  color: var(--footer-text-color);
+}
+
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+  background: var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
+}
+
+.footer-form-submit-icon {
+  position: absolute;
+  fill: #f4f4fd;
+  top: 50%;
+  right: 24px;
+  transform: translate(0, -50%);
+  fill: var(--footer-icon-color);
 }
 
 /* =FOOTER=FORM=END */
